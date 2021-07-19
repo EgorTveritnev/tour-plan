@@ -24,6 +24,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -145,9 +149,63 @@
           <!-- /.ratting hotel-info__ratting -->
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="container swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/slider-1.jpg" alt="slider: 1" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slider-2.jpg"
+                    alt="slider: 2"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slider-3.jfif"
+                    alt="slider: 3"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slider-4.jpg"
+                    alt="slider: 4"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slider-5.jpg"
+                    alt="slider: 5"
+                    style="object-fit: cover"
+                  />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button__prev">
+                <img src="img/arrow-prev.svg" alt="arrow" prev" />
+              </button>
+              <button class="slider-button slider-button__next">
+                <img src="img/arrow-next.svg" alt="arrow: next" />
+              </button>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
