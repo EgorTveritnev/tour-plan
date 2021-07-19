@@ -1,4 +1,10 @@
 const swiper = new Swiper('.swiper-container', {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  
   // Optional parameters
   loop: true,
 
