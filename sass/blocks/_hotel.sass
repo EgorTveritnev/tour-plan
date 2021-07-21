@@ -14,8 +14,6 @@
          margin-bottom: 0
       &__description
          margin: 0
-   &-grid
-      margin-top: 20px
    &-name
       font-size: 24px
       line-height: 30px
@@ -26,6 +24,14 @@
    &-description
       font-size: 12px
       line-height: 15px
+   &-grid
+      display: flex
+      justify-content: space-between
+      margin-top: 20px
+   &-right
+      display: flex
+      flex-direction: column
+      justify-content: space-between
 .stars
    flex-basis: 100%
 .offer
@@ -66,6 +72,7 @@
       background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 .slider
    width: 728px
+   margin-right: 30px
    &-button
       position: absolute
       top: 50%
@@ -74,8 +81,79 @@
       width: 30px
       height: 30px
       border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
       background-color: transparent
       &__next
          right: 18px
       &__prev
          left: 18px
+.booking
+   font-family: Nunito, sans-serif
+   background-color: $dark
+   color: $light
+   border-radius: 8px
+   width: 350px
+   height: 210px
+   padding: 29px
+   &__info
+      display: flex
+      justify-content: space-between
+      margin-bottom: 9px
+   &__price
+      display: flex
+      flex-direction: column
+   &__start
+      font-size: 10px
+      line-height: 14px
+   &__cost
+      font-size: 24px
+      line-height: 33px
+   &__per-room
+      font-size: 12px
+      line-height: 16px
+   &__room
+      margin-top: 4px
+   &__text
+      display: flex
+      align-items: center
+      justify-content: space-between
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+   &__description
+      margin-left: 9px
+   &__call-center
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 17px
+   &__heading
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+   &__number
+      text-decoration: none
+      color: $light
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+   &__button
+      width: 100%
+      min-height: 45px
+      font-weight: 600
+      font-size: 13px
+      line-height: 19px
+      border: none
+      border-radius: 4px
+      background-color: $primary
+      color: $light
+      padding: 13px 84px
+.map
+   width: 347px
+   height: 213px
+   background-color: $dark
+   border-radius: 10px
