@@ -14,3 +14,4 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button__prev',
   },
 });
+
