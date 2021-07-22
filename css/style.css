@@ -704,10 +704,10 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px;
-  background-image: url(../img/newsletter.jfif);
+  background: url(../img/newsletter.jfif);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .newsletter::before {
