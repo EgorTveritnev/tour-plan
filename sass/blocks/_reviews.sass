@@ -1,0 +1,92 @@
+.reviews
+   padding: 40px 0 70px 0
+   &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 45px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 70px
+   &-slider
+      &__item
+         position: relative
+         display: flex
+         flex-direction: column
+         align-items: center
+         background-color: #fff
+         border-radius: 8px
+         margin-top: 45px
+         max-width: 731px
+         margin: 45px auto 0
+         padding: 0 62px 30px
+         &:before
+            content: ''
+            position: absolute
+            top: 13px
+            left: 64px
+            background-image: url(../img/quote-left.svg)
+            background-repeat: no-repeat
+            width: 70px
+            height: 47px
+         &::after
+            content: ''
+            position: absolute
+            top: 119px
+            right: 60px
+            background-image: url(../img/quote-right.svg)
+            background-repeat:
+            width: 70px
+            height: 47px
+      &__profile
+         display: flex
+         flex-direction: column
+         align-items: center
+         margin-top: -45px
+         margin-bottom: 30px
+      &__avatar
+         width: 90px
+         height: 90px
+         border-radius: 50%
+         object-fit: cover
+         margin-bottom: 9px
+      &__username
+         font-style: normal
+         font-weight: bold
+         font-size: 12px
+         line-height: 15px
+         color: $primary
+         margin-bottom: 10px
+      &__date
+         font-style: normal
+         font-weight: normal
+         font-size: 10px
+         line-height: 13px
+         color: #000
+         margin-bottom: 4px
+      &__text
+         font-style: normal
+         font-weight: normal
+         font-size: 12px
+         line-height: 160%
+         text-align: justify
+         max-width: 537px
+         margin: auto
+      &__button
+         position: absolute
+         top: 50%
+         transform: translateY(-50%)
+         width: 30px
+         height: 30px
+         background-repeat: no-repeat
+         background-size: 10px
+         background-color: transparent
+         border: none
+         z-index: 999
+         cursor: pointer
+         &--next
+            background-image: url(../img/arrow-next-secondary.svg)
+            right: 0
+         &--prev
+            background-image: url(../img/arrow-prev-secondary.svg)
+            left: 0
